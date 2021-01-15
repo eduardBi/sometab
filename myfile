@@ -1,6 +1,19 @@
-some writeing
-newriting
-just kepp adding some stuff
-anotherupdate
-jus keep iyy
-ыаваыуаыу
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import ReactDOM from 'react-dom'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fab, faCheckSquare, faCoffee)
+
+
+export default function Showcase (){ 
+ return  <div>
+    <FontAwesomeIcon icon={['fab', 'twitter']} />
+    <FontAwesomeIcon icon={['fab', 'vk']} />
+    <FontAwesomeIcon icon={['fab', 'facebook']} />
+    <FontAwesomeIcon icon="check-square" />
+    With Coffee Checked, these companies always know their coffee is hot and ready!
+  </div>
+}
